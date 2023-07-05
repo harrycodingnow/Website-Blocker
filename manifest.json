@@ -1,0 +1,83 @@
+{
+  "name": "Mentor Tate",
+  "version": "1.1",
+  "description": "Andrew Tate reminds you to work when you starts procrastinating.",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "tate16.png",
+      "48": "tate48.png",
+      "128": "tate128.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.youtube.com/*",
+        "*://*.twitter.com/*",
+        "*://*.reddit.com/*",
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.tumblr.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.netflix.com/*",
+        "*://*.hulu.com/*",
+        "*://*.amazon.com/*",
+        "*://*.ebay.com/*",
+        "*://*.walmart.com/*",
+        "*://*.target.com/*",
+        "*://*.bestbuy.com/*",
+        "*://*.pornhub.com/*",
+        "*://*.xvideos.com/*",
+        "*://*.xhamster.com/*",
+        "*://*.xnxx.com/*",
+        "*://*.youporn.com/*",
+        "*://*.redtube.com/*",
+        "*://*.spankbang.com/*",
+        "*://*.spankwire.com/*",
+        "*://*.tube8.com/*"
+      ],
+      "js": ["background.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["tate.mp4"],
+      "matches": [
+        "*://*.facebook.com/*",
+        "*://*.youtube.com/*",
+        "*://*.twitter.com/*",
+        "*://*.reddit.com/*",
+        "*://*.instagram.com/*",
+        "*://*.tiktok.com/*",
+        "*://*.tumblr.com/*",
+        "*://*.pinterest.com/*",
+        "*://*.twitch.tv/*",
+        "*://*.netflix.com/*",
+        "*://*.hulu.com/*",
+        "*://*.amazon.com/*",
+        "*://*.ebay.com/*",
+        "*://*.walmart.com/*",
+        "*://*.target.com/*",
+        "*://*.bestbuy.com/*",
+        "*://*.bestbuy.com/*",
+        "*://*.pornhub.com/*",
+        "*://*.xvideos.com/*",
+        "*://*.xhamster.com/*",
+        "*://*.xnxx.com/*",
+        "*://*.youporn.com/*",
+        "*://*.redtube.com/*",
+        "*://*.spankbang.com/*",
+        "*://*.spankwire.com/*",
+        "*://*.tube8.com/*"
+      ]
+    }
+  ],
+
+  "host_permissions": ["<all_urls>"]
+}
